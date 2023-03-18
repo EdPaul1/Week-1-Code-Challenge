@@ -1,6 +1,5 @@
 const grader = function(){
     let grade = prompt('Enter your Grade: ');
-    let value;
     if(grade >= 0 && grade <= 100){
         console.log('Your input is ' + grade);
         if (grade > 79){
