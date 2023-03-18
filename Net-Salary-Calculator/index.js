@@ -1,4 +1,7 @@
-let netSalary = function(gross, benefits){
+// To calculate Net Salary 
+// Net Salary = Gross Salary - (Payee + NSSF + NHIF )
+
+let netSalary = function(gross){
     let payee = function(gross){
         if (gross <= 24000){
           return (gross * 0.1);
@@ -64,9 +67,9 @@ let netSalary = function(gross, benefits){
     console.log('Your Payee is ' + payee(gross));
     console.log('Your NHIF contribution is ' + nhif(gross));
     console.log('Your NSSF contribution is ' + nssf(gross));
-    return('Your Net Salary is ' + ((gross + benefits)- (1000 + 1000 + 1000)));
+    return('Your Net Salary is ' + ((gross)- (1000 + 1000 + 1000)));
 }
-console.log(netSalary(50000, 20000));
+console.log(netSalary(50000));
 
 
 
