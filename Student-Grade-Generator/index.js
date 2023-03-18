@@ -1,5 +1,7 @@
+// A prompt is given to enter marks and a grade is returned as the output
 const grader = function(){
     let grade = prompt('Enter your Grade: ');
+    // The input has to be between 0 and 100
     if(grade >= 0 && grade <= 100){
         console.log('Your input is ' + grade);
         if (grade > 79){
